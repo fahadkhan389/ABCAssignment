@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace OnlineRacingBet.Common
+namespace ABCAssignment.Common
 {
     public enum IdentityType
     {
