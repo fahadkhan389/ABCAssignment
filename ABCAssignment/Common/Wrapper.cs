@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
@@ -15,6 +16,12 @@ namespace ABCAssignment.Common
             element.SendKeys(value);
 
         }
+        public static void FillTextBoxandEnter(IWebElement element, string value)
+        {
+            element.SendKeys(value);
+            element.SendKeys(Keys.Enter);
+
+        }
 
         public static Boolean IsElementDisplayed(IWebElement element)
 
@@ -29,11 +36,18 @@ namespace ABCAssignment.Common
             Thread.Sleep(5000);
 
         }
-        public static string GetText(IWebElement element)
+        
+        public static string GetAttributeText(IWebElement element)
         {
             return element.GetAttribute("value");
-
+            
         }
+        public static string GetText(IWebElement element)
+        {
+            return element.Text;
+            
+        }
+
         public static string GetTitle()
         {
             return PropertiesCollection.driver.Title;
@@ -79,7 +93,13 @@ namespace ABCAssignment.Common
                     }
             
         }
-        
+        public static void SwitchWindow(IWebDriver driver)
+        {
+            driver.SwitchTo().Window(driver.WindowHandles.Last());
+
+            }
+
+
     }
 }
 
