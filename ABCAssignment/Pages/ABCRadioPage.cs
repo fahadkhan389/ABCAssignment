@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
-
+//ABC radio page
 namespace ABCAssignment.Pages
 {
     class ABCRadioPage
@@ -67,7 +67,7 @@ namespace ABCAssignment.Pages
         {
             Wrapper.ClickElement(LastBannerItemXpath);
             
-
+            
         }
         public void Search(string Searchtext)
 
