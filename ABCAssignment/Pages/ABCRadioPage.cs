@@ -66,7 +66,9 @@ namespace ABCAssignment.Pages
 
         {
             Wrapper.ClickElement(LastBannerItemXpath);
-           }
+            
+
+        }
         public void Search(string Searchtext)
 
         {

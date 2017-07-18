@@ -48,6 +48,18 @@ namespace ABCAssignment.Common
             
         }
 
+        //public static IWebElement ClickWhenReady(By locator, System.TimeSpan timeout)
+        //{
+
+        //    IWebElement element = null;
+
+        //    WebDriverWait wait = new WebDriverWait(PropertiesCollection.driver, timeout);
+
+        //   return element = wait.Until(ExpectedConditions.ElementToBeClickable(locator));
+
+        //}
+
+
         public static string GetTitle()
         {
             return PropertiesCollection.driver.Title;
