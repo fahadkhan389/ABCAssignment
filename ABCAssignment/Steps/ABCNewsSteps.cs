@@ -129,7 +129,9 @@ namespace ABCAssignment.Steps
             }
 
         }
-
+        /// <summary>
+        /// comment test
+        /// </summary>
         [When(@"i am on image page")]
         public void WhenIAmOnImagePage()
         {
