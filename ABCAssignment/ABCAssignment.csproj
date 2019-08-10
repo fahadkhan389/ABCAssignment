@@ -82,15 +82,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABCNews.feature</DependentUpon>
     </Compile>
-    <Compile Include="Features\ABCRadio.feature.cs">
+    <Compile Include="Features\Bunnings.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ABCRadio.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\APIintegration.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APIintegration.feature</DependentUpon>
+      <DependentUpon>Bunnings.feature</DependentUpon>
     </Compile>
     <Compile Include="Pages\ABCRadioBigIdeaaPage.cs" />
     <Compile Include="Pages\ABCRadioPage.cs" />
@@ -117,13 +112,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ABCNews.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\ABCRadio.feature">
+    <None Include="Features\Bunnings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ABCRadio.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\APIintegration.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>APIintegration.feature.cs</LastGenOutput>
+      <LastGenOutput>Bunnings.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />

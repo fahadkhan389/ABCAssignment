@@ -20,6 +20,8 @@ namespace ABCAssignment.Steps
     [Binding]
     public sealed class CommonSteps
     {
+        string SearchPageURL = System.Configuration.ConfigurationManager.AppSettings["SearchPageURL"];
+
         string ABCNewsURL = System.Configuration.ConfigurationManager.AppSettings["ABCNewsURL"];
         string ABCRadioURL = System.Configuration.ConfigurationManager.AppSettings["ABCRadioURL"];
 
@@ -46,6 +48,25 @@ namespace ABCAssignment.Steps
             try
             {
                 PropertiesCollection.driver.Navigate().GoToUrl(ABCNewsURL);
+        //        PropertiesCollection.driver.Manage().Window.Maximize();
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
+        [Given(@"I am on search page")]
+        public void GivenSearchResultPage()
+        {
+
+            PropertiesCollection.driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(40));
+
+            try
+            {
+                PropertiesCollection.driver.Navigate().GoToUrl(SearchPageURL);
                 PropertiesCollection.driver.Manage().Window.Maximize();
 
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BunningsAssign.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,14 @@ namespace BunningsAssign.Steps
     [Binding]
     public sealed class AddingWishListProductSteps
     {
-        [Given(@"I am on search Result page with search Term Paint")]
-        public void GivenIAmOnSearchResultPageWithSearchTermPaint()
+
+        [Given(@"i enter text ""(.*)"" to search and enter")]
+        public void GivenIEnterTextToSearch(string searchtxt)
         {
+            SearchPage mypage = new SearchPage();
+            mypage.Search(searchtxt);
+             }
 
-
-        }
 
         [Given(@"I Click on Search Button from search Result page")]
         public void GivenIClickOnSearchButtonFromSearchResultPage()
