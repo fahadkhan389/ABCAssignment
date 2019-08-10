@@ -77,26 +77,20 @@
   <ItemGroup>
     <Compile Include="Common\PropertiesCollection.cs" />
     <Compile Include="Common\Wrapper.cs" />
-    <Compile Include="Features\ABCNews.feature.cs">
+    <Compile Include="Features\AddingWishlistProduct.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ABCNews.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\ABCRadio.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ABCRadio.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\APIintegration.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APIintegration.feature</DependentUpon>
+      <DependentUpon>AddingWishlistProduct.feature</DependentUpon>
     </Compile>
     <Compile Include="Pages\ABCRadioBigIdeaaPage.cs" />
     <Compile Include="Pages\ABCRadioPage.cs" />
     <Compile Include="Pages\JustinPage.cs" />
     <Compile Include="Pages\ABCNewspage.cs" />
+    <Compile Include="Pages\ProductDetailPage.cs" />
+    <Compile Include="Pages\SearchPage.cs" />
+    <Compile Include="Pages\WishListPage.cs" />
     <Compile Include="Steps\ABCRadioSteps.cs" />
+    <Compile Include="Steps\AddingWishListProductSteps.cs" />
     <Compile Include="Steps\APIintegrationSteps.cs" />
     <Compile Include="Steps\ABCNewsSteps.cs" />
     <Compile Include="Steps\CommonSteps.cs" />
@@ -109,17 +103,9 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Features\ABCNews.feature">
+    <None Include="Features\AddingWishlistProduct.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ABCNews.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\ABCRadio.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ABCRadio.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\APIintegration.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>APIintegration.feature.cs</LastGenOutput>
+      <LastGenOutput>AddingWishlistProduct.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
