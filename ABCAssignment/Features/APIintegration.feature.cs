@@ -17,22 +17,20 @@ namespace ABCAssignment.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("AddingProduct", Description="\tAs Bunning Customer Searchfor Paint\r\n\tSelect any random Paint\r\n\tI want to add ra" +
-        "ndomly selected paint as Wish List and verify it", SourceFile="Features\\AddingWishlistProduct.feature", SourceLine=0)]
-    public partial class AddingProductFeature
+    [TechTalk.SpecRun.FeatureAttribute("APIintegration", Description="\tAs ABC user i should be able to\r\n\tget the data from json file using URL string", SourceFile="Features\\APIintegration.feature", SourceLine=0)]
+    public partial class APIintegrationFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "AddingWishlistProduct.feature"
+#line 1 "APIintegration.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AddingProduct", "\tAs Bunning Customer Searchfor Paint\r\n\tSelect any random Paint\r\n\tI want to add ra" +
-                    "ndomly selected paint as Wish List and verify it", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "APIintegration", "\tAs ABC user i should be able to\r\n\tget the data from json file using URL string", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,32 +61,16 @@ namespace ABCAssignment.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void FeatureBackground()
+        [TechTalk.SpecRun.ScenarioAttribute("Get the JSON data from URL", new string[] {
+                "mytag"}, SourceLine=4)]
+        public virtual void GetTheJSONDataFromURL()
         {
-#line 6
- #line 7
- testRunner.Given("I am on search Result page with search Term Paint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("Select paint randomly and add it as wish list and verify it", SourceLine=9)]
-        public virtual void SelectPaintRandomlyAndAddItAsWishListAndVerifyIt()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select paint randomly and add it as wish list and verify it", ((string[])(null)));
-#line 10
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get the JSON data from URL", new string[] {
+                        "mytag"});
+#line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
- this.FeatureBackground();
-#line 11
- testRunner.And("I Click on Search Button from search Result page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
- testRunner.And("I select any random paint from search Result page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
- testRunner.And("I click Add to Cart button from product detail page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.When("i go to wishlistpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
- testRunner.Then("paint should be added in wish list page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I have access the URL and i should be able to verify Json Values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -77,10 +77,20 @@
   <ItemGroup>
     <Compile Include="Common\PropertiesCollection.cs" />
     <Compile Include="Common\Wrapper.cs" />
-    <Compile Include="Features\AddingWishlistProduct.feature.cs">
+    <Compile Include="Features\ABCNews.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AddingWishlistProduct.feature</DependentUpon>
+      <DependentUpon>ABCNews.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ABCRadio.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABCRadio.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\APIintegration.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APIintegration.feature</DependentUpon>
     </Compile>
     <Compile Include="Pages\ABCRadioBigIdeaaPage.cs" />
     <Compile Include="Pages\ABCRadioPage.cs" />
@@ -103,9 +113,17 @@
     <None Include="Default.srprofile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Features\AddingWishlistProduct.feature">
+    <None Include="Features\ABCNews.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>AddingWishlistProduct.feature.cs</LastGenOutput>
+      <LastGenOutput>ABCNews.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ABCRadio.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ABCRadio.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\APIintegration.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>APIintegration.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
